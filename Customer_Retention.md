@@ -53,7 +53,7 @@ This analysis combines machine learning and budget-constrained optimization to n
 ## 2. Exploratory Data Analysis
 
 ### Summary Statistics
-
+<img src = "images/Churn_Project/Picture2.png?raw=true"/>
 - Approximately **26.5%** of customers have churned, while **73.5%** remain loyal.
 - **Customer Tenure:** Reveals two main groups—short-term churners and long-term loyal customers.
 - **Monthly Charges:** Right-skewed distribution, with most customers paying between $20–$50, though a notable portion pays higher amounts.
