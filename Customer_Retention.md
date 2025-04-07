@@ -176,9 +176,10 @@ However, a single confusion matrix reflects only one threshold setting. To optim
 ________________________________________
 
 ### 3.3. Threshold and Trade-Off Analysis
-<div style="float: right; margin: 0 20px 20px 0; width: 300px;">
-  <img src="images/Churn_Project/Picture6.png?raw=true" alt="Churn Status" style="width: 100%;" />
+<div style="float: left; margin: 0 20px 20px 0; width: 400px;">
+  <img src="images/Churn_Project/Picture6.png?raw=true" alt="Churn Status" style="width: 100%; max-width: 100%;" />
 </div>
+
 
 Here are some results from the tradeoffs considered when selecting a reasonable classification threshold value.
 
@@ -193,8 +194,8 @@ This pattern suggests that the model tends to assign low probabilities even to c
 ________________________________________
 
 **Balancing Precision and Recall**
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
-  <img src="images/Churn_Project/Picture7.png?raw=true" alt="Churn Status" style="width: 100%;" />
+<div style="float: left; margin: 0 20px 20px 0; width: 400px;">
+  <img src="images/Churn_Project/Picture7.png?raw=true" alt="Churn Status" style="width: 100%; max-width: 100%;" />
 </div>
 
 This chart illustrates how our model balances the True Positive Rate (TPR, or recall — how many churners we successfully detect) and the False Positive Rate (FPR — how often we incorrectly predict churn for non-churners) as we adjust the classification threshold.
