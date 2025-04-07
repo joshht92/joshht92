@@ -3,6 +3,11 @@ layout: no_sidebar
 title: Churn Project
 ---
 
+<div style="text-align: right; margin-top: 10px;">
+  <a href="/" style="font-size: 0.95em; text-decoration: none; color: #0366d6;">← Back to Home</a>
+</div>
+
+
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
   <h1>Which customers are worth Retaining?</h1>
   <p style="font-size: 1.2em; font-weight: 500;">
