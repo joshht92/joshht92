@@ -14,23 +14,23 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .layout {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
       min-height: 100vh;
     }
 
     .sidebar {
-      background-color: #fff;
-      padding: 20px;
+      background: #fff;
       width: 260px;
-      flex-shrink: 0;
+      padding: 20px;
       border-right: 1px solid #eaeaea;
+      flex-shrink: 0;
     }
 
     .sidebar img {
       max-width: 100%;
-      height: auto;
       margin-bottom: 15px;
     }
 
@@ -46,8 +46,8 @@
     }
 
     .content {
-      flex-grow: 1;
       padding: 40px 30px;
+      flex-grow: 1;
       max-width: 1000px;
       margin: 0 auto;
     }
@@ -58,9 +58,9 @@
       color: #999;
     }
 
-    /* Mobile Layout */
+    /* MOBILE FRIENDLY STACKING */
     @media (max-width: 768px) {
-      body {
+      .layout {
         flex-direction: column;
       }
 
@@ -77,26 +77,28 @@
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-    {% if site.logo %}
-      <img src="{{ site.logo | relative_url }}" alt="Logo" />
-    {% endif %}
-    <p>{{ site.description | default: site.github.project_tagline }}</p>
+  <div class="layout">
+    <div class="sidebar">
+      <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="Logo" />
+      {% endif %}
+      <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-    {% if site.github.is_user_page %}
-      <p><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-    {% endif %}
-  </div>
+      {% if site.github.is_user_page %}
+        <p><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+      {% endif %}
+    </div>
 
-  <div class="content">
-    {{ content }}
-    <footer>
-      {% comment %}
-      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-      <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      {% endcomment %}
-    </footer>
+    <div class="content">
+      {{ content }}
+      <footer>
+        {% comment %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        {% endcomment %}
+      </footer>
+    </div>
   </div>
 
   <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
