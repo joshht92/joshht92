@@ -18,31 +18,18 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
   <style>
-    /* Layout structure */
     body {
       margin: 0;
       font-family: sans-serif;
       display: flex;
-      min-height: 100vh;
     }
 
     .sidebar {
       width: 260px;
       background: #fff;
       padding: 20px;
-      box-shadow: 1px 0 4px rgba(0,0,0,0.1);
+      box-shadow: 1px 0 4px rgba(0,0,0,0.05);
       flex-shrink: 0;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-    }
-
-    .content {
-      flex-grow: 1;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 30px;
     }
 
     .sidebar img {
@@ -54,6 +41,13 @@
     .sidebar p a {
       display: block;
       margin: 8px 0;
+    }
+
+    .content {
+      flex-grow: 1;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 30px;
     }
 
     footer {
@@ -68,7 +62,7 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-    
+
     {% if site.logo %}
       <img src="{{ site.logo | relative_url }}" alt="Logo" />
     {% endif %}
