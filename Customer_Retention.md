@@ -11,7 +11,8 @@ Joshua Thompson
 Date: 03/28/2025
 
 ________________________________________
-
+<div style="text-align: center;">
+  
 ## Table of Contents
 
 1. [Business Context](#1-business-context)
@@ -30,7 +31,7 @@ ________________________________________
    - [5.2. Knapsack Optimization Strategy](#52-knapsack-optimization-strategy)
    - [5.3. Comparative Results](#53-comparative-results)
 6. [Recommendations & Future Work](#6-recommendations--future-work)
-
+</div>
 ________________________________________
 
 ## 1. Business Context
@@ -105,9 +106,10 @@ During my churn analysis, I compared different machine learning model results an
 ________________________________________
 <div style="text-align: center;">
   <img src="images/Churn_Project/Picture4.png?raw=true" alt="Customer Tenure, Charges" />
+   This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
 </div>
 
-This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
+
 
 **Insight** | **Description**
 --- | ---
@@ -124,9 +126,10 @@ ________________________________________
 ### 3.2. Model Performance Evaluation
 
 <div style="text-align: center;">
-  <img src="images/Churn_Project/Picture5.png?raw=true" alt="Customer Tenure, Charges" />
-   Figure 3.2 shows the confusion matrix of the logistic regression model.
+  <img src="images/Churn_Project/Picture5.png?raw=true" alt="Customer Tenure, Charges" style="max-width: 100%;" />
+  <p style="margin-top: 5px; font-style: italic;">Figure 3.2 shows the confusion matrix of the logistic regression model.</p>
 </div>
+
 
 
 **Confusion Matrix**  
