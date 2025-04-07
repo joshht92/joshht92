@@ -176,7 +176,7 @@ However, a single confusion matrix reflects only one threshold setting. To optim
 ________________________________________
 
 ### 3.3. Threshold and Trade-Off Analysis
-<div style="float: left; margin: 0 20px 20px 0; width: 400px;">
+<div style="float: right; margin: 0 20px 20px 0; width: 400px;">
   <img src="images/Churn_Project/Picture6.png?raw=true" alt="Churn Status" style="width: 100%; max-width: 100%;" />
 </div>
 
@@ -247,8 +247,9 @@ ________________________________________
 
 ### 4.2. Customer Segmentation Visualization (PCA)
 <div style="text-align: center;">
-  <img src="images/Churn_Project/Picture9.png?raw=true" alt="Customer Tenure, Charges" />
+  <img src="images/Churn_Project/Picture9.png?raw=true" alt="Customer Tenure, Charges" style="width: 80%; max-width: 600px;" />
 </div>
+
 
 To uncover patterns in customer behavior, I performed K-means clustering using a variety of customer attributes such as contract type, tenure, monthly charges, and usage patterns. The objective was to group customers with similar characteristics into distinct, actionable segments.
 
@@ -265,21 +266,33 @@ ________________________________________
 </div>
 A summary of customer behavioral & demographic insights used to better understand each segment:
 
-**Cluster 1 (High) – 85% likelihood of churn**  
-- Mostly month-to-month contracts (94%)  
-- Low tenure and low autopay use  
-- Heavy use of fiber internet, limited support services
+<div style="margin-bottom: 20px;">
+  <p style="margin-bottom: 4px;"><strong>Cluster 1 (High) – 85% likelihood of churn</strong></p>
+  <ul style="margin-top: 0;">
+    <li>Mostly month-to-month contracts (94%)</li>
+    <li>Low tenure and low autopay use</li>
+    <li>Heavy use of fiber internet, limited support services</li>
+  </ul>
+</div>
 
-**Cluster 2 (Loyal) – 0% likelihood of churn**  
-- Long-tenured customers  
-- Low monthly charges and strong service adoption  
-- High percentage have phone service
+<div style="margin-bottom: 20px;">
+  <p style="margin-bottom: 4px;"><strong>Cluster 2 (Loyal) – 0% likelihood of churn</strong></p>
+  <ul style="margin-top: 0;">
+    <li>Long-tenured customers</li>
+    <li>Low monthly charges and strong service adoption </li>
+    <li>High percentage have phone service</li>
+  </ul>
+</div>
 
-**Cluster 3 (Moderate) – 13% likelihood of churn**  
-- Highest revenue customers  
-- Long tenure, high overall service use
+<div style="margin-bottom: 20px;">
+  <p style="margin-bottom: 4px;"><strong>Cluster 3 (Moderate) – 13% likelihood of churn</strong></p>
+  <ul style="margin-top: 0;">
+    <li>Highest revenue customers</li>
+    <li>Long tenure, high overall service use </li>
+  </ul>
+</div>
+
 <div style="clear: both;"></div>
-________________________________________
 
 Equipped with customer personas and churn probabilities, I next focused on designing a data-driven retention strategy. The following analysis compares two approaches to deciding which customers should be targeted under realistic budget constraints.
 
@@ -368,10 +381,10 @@ ________________________________________
 ### 5.3. Comparative Results
 
 **Retention Funnel:**
-<div style="float: right; margin: 0 20px 20px 0; width: 300px;">
-  <img src="images/Churn_Project/Picture11.png?raw=true" alt="Churn Status" style="width: 100%;" />
-</div>
 
+<div style="float: right; margin: 0 20px 20px 0; width: 400px;">
+  <img src="images/Churn_Project/Picture11.png?raw=true" alt="Retention Funnel" style="width: 100%; max-width: 100%;" />
+</div>
 
 - Starting with 7,032 total customers, the churn model first identifies 2,620 customers as likely churners based on predicted probabilities and expected benefits (heuristic approach).
 - Applying the final Knapsack (Scenario 2), only 593 customers are selected as the optimal retention targets from 2 segments. These are the customers who provide a balance of high net expected profit and maintain market share, while staying within budget.
@@ -379,7 +392,6 @@ ________________________________________
 
 This highlights the importance of not only predicting churn but also strategically selecting which customers to retain given limited resources. The next section summarizes the key insights and actionable recommendations derived from this analysis.
 
-________________________________________
 
 ## 6. Final Summary and Recommendations
 
