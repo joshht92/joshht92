@@ -3,10 +3,10 @@ layout: default
 title: Joshua Thompson
 ---
 
-<div style="display: flex; gap: 40px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-top: 40px;">
+<div style="display: flex; flex-direction: row; gap: 40px; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; margin-top: 40px;">
 
   <!-- Education Column -->
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1; min-width: 320px; max-width: 48%;">
     <h2>Education</h2>
     <p><strong>Master of Science, Business Analytics</strong><br>
     <em>California State Polytechnic University, Pomona</em><br>
@@ -24,7 +24,7 @@ title: Joshua Thompson
   <div style="width: 1px; background-color: #ccc; height: auto; margin: 0 10px;"></div>
 
   <!-- Skills Column -->
-  <div style="flex: 1; min-width: 300px;">
+  <div style="flex: 1; min-width: 320px; max-width: 48%;">
     <h2>Skills</h2>
     <h4>Technical Tools</h4>
     <ul>
@@ -43,7 +43,6 @@ title: Joshua Thompson
 
 </div>
 
-<hr style="margin: 60px 0 20px;">
 
 ## Portfolio
 
