@@ -12,7 +12,6 @@ Joshua Thompson
 Date: 03/28/2025
 
 ________________________________________
-<div style="text-align: center;">
   
 ## Table of Contents
 
@@ -32,7 +31,7 @@ ________________________________________
    - [5.2. Knapsack Optimization Strategy](#52-knapsack-optimization-strategy)
    - [5.3. Comparative Results](#53-comparative-results)
 6. [Recommendations & Future Work](#6-recommendations--future-work)
-</div>
+
 ________________________________________
 
 ## 1. Business Context
@@ -105,11 +104,12 @@ ________________________________________
 During my churn analysis, I compared different machine learning model results and among the three models, logistic regression achieved the best overall performance, offering a strong balance of recall, precision, and AUC. While Naïve Bayes excelled in recall, it suffered from low precision. CART, despite being highly interpretable, underperformed in both classification and ranking power.
 
 ________________________________________
-<div style="text-align: center;">
-  <img src="images/Churn_Project/Picture4.png?raw=true" alt="Customer Tenure, Charges" />
-   This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
-</div>
 
+<div style="text-align: center;">
+  <img src="images/Churn_Project/Picture4.png?raw=true" alt="Customer Tenure, Charges" style="max-width: 100%;" />
+  <p style="margin-top: 5px; font-style: italic;">Figure 3.1 This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
+</p>
+</div>
 
 
 **Insight** | **Description**
