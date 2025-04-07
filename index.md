@@ -2,7 +2,7 @@
 
 ---
 
-[A Machine Learning and Optimization Framework for Targeted Customer Retention](/Customer_Retention.md)
+[A Machine Learning and Optimization Framework for Targeted Customer Retention](/pdf/Customer_Churn_Report-short.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
