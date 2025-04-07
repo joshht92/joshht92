@@ -62,6 +62,7 @@ ________________________________________
 
 ### 2.1. Summary Statistics
 <img src="images/Churn_Project/Picture2.png?raw=true"/>
+
 I began with looking at the distribution of churn status among customers in the dataset. Approximately 26.5% of customers have churned while 73.5% have remained loyal.
 
 The churn rate is relatively high at 26.5%, signaling a significant portion of customers who have stopped using the service for various reasons.
@@ -70,6 +71,7 @@ This level of churn could have substantial implications on revenue and customer 
 
 ________________________________________
 <img src="images/Churn_Project/Picture3.png?raw=true"/>
+
 **Customer Tenure:**  
 Indicating two main groups — short-term churners and long-term loyal customers, with fewer medium-tenure customers.
 
@@ -98,6 +100,7 @@ During my churn analysis, I compared different machine learning model results an
 ________________________________________
 
 <img src="images/Churn_Project/Picture4.png?raw=true"/>
+
 This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
 
 **Insight** | **Description**
@@ -115,6 +118,7 @@ ________________________________________
 ### 3.2. Model Performance Evaluation
 
 <img src="images/Churn_Project/Picture5.png?raw=true"/>
+
 Figure 3.2 shows the confusion matrix of the logistic regression model.
 
 **Confusion Matrix**  
@@ -196,6 +200,7 @@ The next step was to segment customers into distinct groups based on shared beha
 ### 4.1. Determining Optimal Number of Clusters (Elbow Method)
 
 <img src="images/Churn_Project/Picture8.png?raw=true"/>
+
 **Choosing the Optimal Number of Clusters (K):**
 
 To determine the ideal number of customer segments, I applied the Elbow Method. This technique shows a sharp bend at **K = 3**, suggesting that three clusters offer a good balance between compression and complexity. Therefore, I selected **K = 3** for the number of segmentations.
@@ -205,6 +210,7 @@ ________________________________________
 ### 4.2. Customer Segmentation Visualization (PCA)
 
 <img src="images/Churn_Project/Picture9.png?raw=true"/>
+
 To uncover patterns in customer behavior, I performed K-means clustering using a variety of customer attributes such as contract type, tenure, monthly charges, and usage patterns. The objective was to group customers with similar characteristics into distinct, actionable segments.
 
 Using Principal Component Analysis (PCA) for dimensionality reduction, I visualize the three customer segments. Each point in the scatter plot represents a customer, colored by their cluster assignment.
@@ -215,6 +221,7 @@ ________________________________________
 
 ### 4.3. Customer Segments & Personas
 <img src="images/Churn_Project/Picture10.png?raw=true"/>
+
 A summary of customer behavioral & demographic insights used to better understand each segment:
 
 **Cluster 1 (High) – 85% likelihood of churn**  
@@ -321,6 +328,7 @@ ________________________________________
 
 **Retention Funnel:**
 <img src="images/Churn_Project/Picture11.png?raw=true"/>
+
 - Starting with 7,032 total customers, the churn model first identifies 2,620 customers as likely churners based on predicted probabilities and expected benefits (heuristic approach).
 - Applying the final Knapsack (Scenario 2), only 593 customers are selected as the optimal retention targets from 2 segments. These are the customers who provide a balance of high net expected profit and maintain market share, while staying within budget.
 
