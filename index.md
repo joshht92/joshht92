@@ -1,4 +1,5 @@
 ---
+
 <div style="display: flex; gap: 40px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
 
   <!-- Education Column -->
@@ -17,7 +18,7 @@
   </div>
 
   <!-- Divider -->
-  <div style="width: 1px; background-color: #ccc; height: auto;"></div>
+  <div style="width: 1px; background-color: #ccc; height: auto; margin: 0 10px;"></div>
 
   <!-- Skills Column -->
   <div style="flex: 1; min-width: 300px;">
@@ -40,22 +41,20 @@
 </div>
 
 ---
-## Portfolio
----
 
-[A Machine Learning and Optimization Framework for Targeted Customer Retention](/Customer_Retention.md)
+## Portfolio
+
+[A Machine Learning and Optimization Framework for Targeted Customer Retention](/Customer_Retention.md)  
 <img src="images/Picture1.png?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+
+[Project 2 Title](/pdf/sample_presentation.pdf)  
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+
+[Project 3 Title](http://example.com/)  
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-
-
----
-<!-- Remove above link if you don't want to attibute -->
