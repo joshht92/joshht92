@@ -15,6 +15,41 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    {% seo %}
+   <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+      }
+
+      .wrapper {
+         display: flex;
+         height: 100vh;
+         overflow: hidden;
+      }
+
+      header {
+         width: 260px;
+         max-height: 100vh;
+         overflow-y: auto;
+         padding: 1rem;
+         background-color: #f8f8f8;
+         border-right: 1px solid #ddd;
+         flex-shrink: 0;
+      }
+
+      section {
+         flex: 1;
+         overflow-y: auto;
+         padding: 2rem;
+      }
+
+      footer {
+         padding: 1rem;
+         background: #f0f0f0;
+         border-top: 1px solid #ccc;
+      }
+   </style>
    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
    <!--[if lt IE 9]>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -45,13 +80,13 @@
       <section>
          {{ content }}
       </section>
-      <footer>
-         {% if site.github.is_project_page %}
-         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-         {% endif %}
-         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
    </div>
+   <footer>
+      {% if site.github.is_project_page %}
+      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      {% endif %}
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+   </footer>
    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 </body>
 </html>
