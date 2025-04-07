@@ -1,10 +1,3 @@
----
-layout: none
-title: Customer Retention Report
-permalink: /projects/customer-retention/
----
-
-
 # Which customers are worth Retaining?
 A Machine Learning and Optimization Framework for Targeted Customer Retention
 
