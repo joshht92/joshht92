@@ -62,11 +62,8 @@ ________________________________________
 
 ### 2.1. Summary Statistics
 <div style="float: left; margin: 0 20px 20px 0; width: 300px;">
-<img src="images/Churn_Project/Picture2.png?raw=true"/>
+  <img src="images/Churn_Project/Picture2.png?raw=true" alt="Churn Status" style="width: 100%;" />
 </div>
-
-<div style="clear: both;"></div>
-
 
 I began with looking at the distribution of churn status among customers in the dataset. Approximately 26.5% of customers have churned while 73.5% have remained loyal.
 
@@ -75,12 +72,7 @@ The churn rate is relatively high at 26.5%, signaling a significant portion of c
 This level of churn could have substantial implications on revenue and customer lifetime value (CLV). Thus, highlighting the importance of implementing targeted retention strategies.
 
 ________________________________________
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture3.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 **Customer Tenure:**  
 Indicating two main groups — short-term churners and long-term loyal customers, with fewer medium-tenure customers.
@@ -109,12 +101,7 @@ During my churn analysis, I compared different machine learning model results an
 
 ________________________________________
 
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture4.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
 
@@ -132,12 +119,7 @@ ________________________________________
 
 ### 3.2. Model Performance Evaluation
 
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture5.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 Figure 3.2 shows the confusion matrix of the logistic regression model.
 
@@ -171,12 +153,7 @@ Here are some results from the tradeoffs considered when selecting a reasonable 
 This chart shows how well our churn prediction model performs as we adjust the threshold — the point where we classify a customer as an actual churner.  
 The key takeaway here is how to set the threshold to best identify churners without generating too many false alarms:
 
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture6.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 This pattern suggests that the model tends to assign low probabilities even to customers who are actually at risk of churning. Therefore, to maximize effectiveness, we need to adopt a lower threshold to ensure we capture most potential churners early.
 
@@ -186,12 +163,7 @@ ________________________________________
 
 This chart illustrates how our model balances the True Positive Rate (TPR, or recall — how many churners we successfully detect) and the False Positive Rate (FPR — how often we incorrectly predict churn for non-churners) as we adjust the classification threshold.
 
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture7.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 The trade-off visualized here is critical for churn prediction:
 
@@ -229,12 +201,7 @@ The next step was to segment customers into distinct groups based on shared beha
 
 ### 4.1. Determining Optimal Number of Clusters (Elbow Method)
 
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture8.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 **Choosing the Optimal Number of Clusters (K):**
 
@@ -244,12 +211,7 @@ ________________________________________
 
 ### 4.2. Customer Segmentation Visualization (PCA)
 
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture9.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 To uncover patterns in customer behavior, I performed K-means clustering using a variety of customer attributes such as contract type, tenure, monthly charges, and usage patterns. The objective was to group customers with similar characteristics into distinct, actionable segments.
 
@@ -260,12 +222,7 @@ In the next step, I analyzed these clusters in detail to understand their defini
 ________________________________________
 
 ### 4.3. Customer Segments & Personas
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture10.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 A summary of customer behavioral & demographic insights used to better understand each segment:
 
@@ -372,12 +329,7 @@ ________________________________________
 ### 5.3. Comparative Results
 
 **Retention Funnel:**
-<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
 <img src="images/Churn_Project/Picture11.png?raw=true"/>
-</div>
-
-<div style="clear: both;"></div>
-
 
 - Starting with 7,032 total customers, the churn model first identifies 2,620 customers as likely churners based on predicted probabilities and expected benefits (heuristic approach).
 - Applying the final Knapsack (Scenario 2), only 593 customers are selected as the optimal retention targets from 2 segments. These are the customers who provide a balance of high net expected profit and maintain market share, while staying within budget.
