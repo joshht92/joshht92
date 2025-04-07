@@ -1,3 +1,9 @@
+---
+layout: no_sidebar
+title: Churn Project
+---
+
+
 # Which customers are worth Retaining?
 A Machine Learning and Optimization Framework for Targeted Customer Retention
 
