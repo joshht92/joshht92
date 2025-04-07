@@ -2,7 +2,7 @@
 
 ---
 
-[A Machine Learning and Optimization Framework for Targeted Customer Retention](/sample_page)
+[A Machine Learning and Optimization Framework for Targeted Customer Retention](/sample_page.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
