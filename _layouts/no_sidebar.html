@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <style>
+      .centered-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <section>
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
-          {{ content }}
-        </div>
-      </section>
+    <main class="centered-content">
+      {{ content }}
     </main>
   </body>
 </html>
