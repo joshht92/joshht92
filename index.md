@@ -1,6 +1,9 @@
 ---
+layout: default
+title: Joshua Thompson
+---
 
-<div style="display: flex; gap: 40px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+<div style="display: flex; gap: 40px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-top: 40px;">
 
   <!-- Education Column -->
   <div style="flex: 1; min-width: 300px;">
@@ -40,21 +43,23 @@
 
 </div>
 
----
+<hr style="margin: 60px 0 20px;">
 
 ## Portfolio
 
+---
+
 [A Machine Learning and Optimization Framework for Targeted Customer Retention](/Customer_Retention.md)  
-<img src="images/Picture1.png?raw=true"/>
+<img src="images/Picture1.png?raw=true" style="max-width: 100%;"/>
 
 ---
 
 [Project 2 Title](/pdf/sample_presentation.pdf)  
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/dummy_thumbnail.jpg?raw=true" style="max-width: 100%;"/>
 
 ---
 
 [Project 3 Title](http://example.com/)  
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/dummy_thumbnail.jpg?raw=true" style="max-width: 100%;"/>
 
 ---
