@@ -10,7 +10,6 @@ title: Joshua Thompson
       <h2>Education</h2>
       <p><strong>Master of Science, Business Analytics</strong><br>
       <em>California State Polytechnic University, Pomona</em><br>
-      <em>In Progress (Expected Completion 2026)</em></p>
 
       <p><strong>Bachelor of Science, Industrial & Manufacturing Engineering</strong><br>
       <em>California State Polytechnic University, Pomona</em></p>
