@@ -3,13 +3,15 @@ layout: no_sidebar
 title: Churn Project
 ---
 
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+  <h1>Which customers are worth Retaining?</h1>
+  <p style="font-size: 1.2em; font-weight: 500;">
+    A Machine Learning and Optimization Framework for Targeted Customer Retention
+  </p>
+  <p><strong>Joshua Thompson</strong><br>
+  Date: 03/28/2025</p>
+</div>
 
-
-# Which customers are worth Retaining?
-A Machine Learning and Optimization Framework for Targeted Customer Retention
-
-Joshua Thompson  
-Date: 03/28/2025
 
 ________________________________________
   
