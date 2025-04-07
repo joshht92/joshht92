@@ -2,76 +2,89 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
 <head>
   {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
   {% endif %}
-
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-  <!-- 🔧 Add sidebar fix styling here -->
   <style>
-    html, body {
-      height: 100%;
+    /* Layout structure */
+    body {
       margin: 0;
-    }
-    .wrapper {
-      min-height: 100vh;
+      font-family: sans-serif;
       display: flex;
-      flex-direction: column;
-    }
-    header {
-      flex-shrink: 0;
-    }
-    section {
-      flex-grow: 1;
+      min-height: 100vh;
     }
 
-    /* ✅ Fix for sidebar being cut off */
     .sidebar {
-      max-height: none !important;
-      overflow: visible !important;
-      white-space: normal;
+      width: 260px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 1px 0 4px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .content {
+      flex-grow: 1;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .sidebar p a {
+      display: block;
+      margin: 8px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #999;
     }
   </style>
 </head>
-
 <body>
-  <div class="wrapper">
-    <header>
-      <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
-      {% if site.logo %}
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+    
+    {% if site.logo %}
       <img src="{{ site.logo | relative_url }}" alt="Logo" />
-      {% endif %}
+    {% endif %}
 
-      <p>{{ site.description | default: site.github.project_tagline }}</p>
+    <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-      {% if site.github.is_user_page %}
-      <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-      {% endif %}
+    {% if site.github.is_user_page %}
+      <p><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+    {% endif %}
+  </div>
 
-      {% if site.show_downloads %}
-      <ul class="downloads">
-        <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-        <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-        <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-      </ul>
-      {% endif %}
-    </header>
-
-    <section>
+  <!-- Main Content -->
+  <div class="content">
+    <main>
       {{ content }}
-    </section>
+    </main>
 
     <footer>
       {% comment %}
@@ -81,6 +94,5 @@
     </footer>
   </div>
 
-  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 </body>
 </html>
