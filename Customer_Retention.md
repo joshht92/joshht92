@@ -2,6 +2,7 @@
 layout: no_sidebar
 title: Churn Project
 ---
+<div style="max-width: 850px; margin: 0 auto; padding: 0 20px;">
 
 
 # Which customers are worth Retaining?
@@ -396,3 +397,6 @@ ________________________________________
    Incorporate predicted Customer Lifetime Value (CLV) into the optimization process to better prioritize customers with the greatest long-term revenue potential.
 
 By embedding this data-driven approach into the organization’s retention strategy, the business can achieve sustainable profitability while strengthening customer relationships and brand loyalty.
+
+
+</div>
