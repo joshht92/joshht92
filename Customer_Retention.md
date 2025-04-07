@@ -13,24 +13,43 @@ Date: 03/28/2025
 
 ________________________________________
   
-## Table of Contents
+<div style="text-align: center; margin-top: 40px;">
 
-1. [Business Context](#1-business-context)
-2. [Exploratory Data Analysis](#2-exploratory-data-analysis)
-   - [2.1. Summary Statistics](#21-summary-statistics)
-3. [Customer Churn](#3-customer-churn)
-   - [3.1. Machine Learning Model for Churn Prediction](#31-machine-learning-model-for-churn-prediction)
-   - [3.2. Model Performance Evaluation](#32-model-performance-evaluation)
-   - [3.3. Threshold and Trade-Off Analysis](#33-threshold-and-trade-off-analysis)
-4. [Customer Segmentation](#4-customer-segmentation)
-   - [4.1. Determining Optimal Number of Clusters](#41-determining-optimal-number-of-clusters)
-   - [4.2. Customer Segmentation Visualization](#42-customer-segmentation-visualization)
-   - [4.3. Customer Segments & Personas](#43-customer-segments--personas)
-5. [Customer Retention](#5-customer-retention)
-   - [5.1. Baseline heuristic approach](#51-baseline-heuristic-approach)
-   - [5.2. Knapsack Optimization Strategy](#52-knapsack-optimization-strategy)
-   - [5.3. Comparative Results](#53-comparative-results)
-6. [Recommendations & Future Work](#6-recommendations--future-work)
+  <h2 style="margin-bottom: 20px;">Table of Contents</h2>
+
+  <ul style="list-style: none; padding-left: 0; display: inline-block; text-align: left;">
+    <li><a href="#1-business-context">1. Business Context</a></li>
+    <li><a href="#2-exploratory-data-analysis">2. Exploratory Data Analysis</a>
+      <ul>
+        <li><a href="#21-summary-statistics">2.1. Summary Statistics</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-customer-churn">3. Customer Churn</a>
+      <ul>
+        <li><a href="#31-machine-learning-model-for-churn-prediction">3.1. Machine Learning Model for Churn Prediction</a></li>
+        <li><a href="#32-model-performance-evaluation">3.2. Model Performance Evaluation</a></li>
+        <li><a href="#33-threshold-and-trade-off-analysis">3.3. Threshold and Trade-Off Analysis</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-customer-segmentation">4. Customer Segmentation</a>
+      <ul>
+        <li><a href="#41-determining-optimal-number-of-clusters">4.1. Determining Optimal Number of Clusters</a></li>
+        <li><a href="#42-customer-segmentation-visualization">4.2. Customer Segmentation Visualization</a></li>
+        <li><a href="#43-customer-segments--personas">4.3. Customer Segments & Personas</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-customer-retention">5. Customer Retention</a>
+      <ul>
+        <li><a href="#51-baseline-heuristic-approach">5.1. Baseline heuristic approach</a></li>
+        <li><a href="#52-knapsack-optimization-strategy">5.2. Knapsack Optimization Strategy</a></li>
+        <li><a href="#53-comparative-results">5.3. Comparative Results</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-recommendations--future-work">6. Recommendations & Future Work</a></li>
+  </ul>
+
+</div>
+
 
 ________________________________________
 
