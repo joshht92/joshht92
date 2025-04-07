@@ -71,6 +71,9 @@ The churn rate is relatively high at 26.5%, signaling a significant portion of c
 
 This level of churn could have substantial implications on revenue and customer lifetime value (CLV). Thus, highlighting the importance of implementing targeted retention strategies.
 
+
+
+
 ________________________________________
 <img src="images/Churn_Project/Picture3.png?raw=true"/>
 
