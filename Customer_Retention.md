@@ -73,7 +73,9 @@ This level of churn could have substantial implications on revenue and customer 
 
 <div style="clear: both;"></div>
 ________________________________________
-<img src="images/Churn_Project/Picture3.png?raw=true"/>
+<div style="text-align: center;">
+  <img src="images/Churn_Project/Picture3.png?raw=true" alt="Customer Tenure, Charges" />
+</div>
 
 **Customer Tenure:**  
 Indicating two main groups — short-term churners and long-term loyal customers, with fewer medium-tenure customers.
@@ -101,8 +103,9 @@ ________________________________________
 During my churn analysis, I compared different machine learning model results and among the three models, logistic regression achieved the best overall performance, offering a strong balance of recall, precision, and AUC. While Naïve Bayes excelled in recall, it suffered from low precision. CART, despite being highly interpretable, underperformed in both classification and ranking power.
 
 ________________________________________
-
-<img src="images/Churn_Project/Picture4.png?raw=true"/>
+<div style="text-align: center;">
+  <img src="images/Churn_Project/Picture4.png?raw=true" alt="Customer Tenure, Charges" />
+</div>
 
 This plot visualizes the average effect of each feature on churn probability, as learned by the logistic regression model.
 
@@ -120,9 +123,11 @@ ________________________________________
 
 ### 3.2. Model Performance Evaluation
 
-<img src="images/Churn_Project/Picture5.png?raw=true"/>
+<div style="text-align: center;">
+  <img src="images/Churn_Project/Picture5.png?raw=true" alt="Customer Tenure, Charges" />
+   Figure 3.2 shows the confusion matrix of the logistic regression model.
+</div>
 
-Figure 3.2 shows the confusion matrix of the logistic regression model.
 
 **Confusion Matrix**  
 This plot represents the aggregate confusion matrix resulting from the Logistic Regression classifier evaluated across all folds of cross-validation.
@@ -146,6 +151,9 @@ However, a single confusion matrix reflects only one threshold setting. To optim
 ________________________________________
 
 ### 3.3. Threshold and Trade-Off Analysis
+<div style="float: right; margin: 0 20px 20px 0; width: 300px;">
+  <img src="images/Churn_Project/Picture6.png?raw=true" alt="Churn Status" style="width: 100%;" />
+</div>
 
 Here are some results from the tradeoffs considered when selecting a reasonable classification threshold value.
 
@@ -154,17 +162,17 @@ Here are some results from the tradeoffs considered when selecting a reasonable 
 This chart shows how well our churn prediction model performs as we adjust the threshold — the point where we classify a customer as an actual churner.  
 The key takeaway here is how to set the threshold to best identify churners without generating too many false alarms:
 
-<img src="images/Churn_Project/Picture6.png?raw=true"/>
 
 This pattern suggests that the model tends to assign low probabilities even to customers who are actually at risk of churning. Therefore, to maximize effectiveness, we need to adopt a lower threshold to ensure we capture most potential churners early.
-
+<div style="clear: both;"></div>
 ________________________________________
 
 **Balancing Precision and Recall**
+<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
+  <img src="images/Churn_Project/Picture7.png?raw=true" alt="Churn Status" style="width: 100%;" />
+</div>
 
 This chart illustrates how our model balances the True Positive Rate (TPR, or recall — how many churners we successfully detect) and the False Positive Rate (FPR — how often we incorrectly predict churn for non-churners) as we adjust the classification threshold.
-
-<img src="images/Churn_Project/Picture7.png?raw=true"/>
 
 The trade-off visualized here is critical for churn prediction:
 
@@ -174,7 +182,7 @@ The trade-off visualized here is critical for churn prediction:
 The goal is to select a threshold that balances these two objectives — catching as many churners as possible while avoiding excessive false positives.
 
 Choosing the right balance improves the efficiency of retention campaigns, allowing us to prioritize customers who are genuinely at risk. Based on this trade-off, I proceeded to select an optimal threshold that best aligns with business objectives.
-
+<div style="clear: both;"></div>
 ________________________________________
 
 **Final Threshold Selection and Model Performance**
@@ -192,7 +200,7 @@ After analyzing the trade-offs, I selected a threshold of 0.25 as the optimal cu
 
 In business terms, using this threshold ensures we detect about 81% of real churners, giving the company a strong opportunity to engage and retain them, even if it occasionally involves interacting with customers who might not have churned. Since missed churners cost far more than a few false alarms, we value recall most.
 
-While the model provides valuable churn probabilities for individual customers, it is equally important to understand how different types of customers behave. To address this, I performed a customer segmentation analysis.
+Having established churn risk, we now turn to understanding which types of customers exhibit these risks.
 
 ________________________________________
 
@@ -201,18 +209,20 @@ ________________________________________
 The next step was to segment customers into distinct groups based on shared behavioral patterns, allowing the business to tailor retention strategies more effectively. To ensure the segmentation was objective and data driven, I used the Elbow Method to determine the optimal number of customer groups.
 
 ### 4.1. Determining Optimal Number of Clusters (Elbow Method)
-
-<img src="images/Churn_Project/Picture8.png?raw=true"/>
+<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
+  <img src="images/Churn_Project/Picture8.png?raw=true" alt="Churn Status" style="width: 100%;" />
+</div>
 
 **Choosing the Optimal Number of Clusters (K):**
 
 To determine the ideal number of customer segments, I applied the Elbow Method. This technique shows a sharp bend at **K = 3**, suggesting that three clusters offer a good balance between compression and complexity. Therefore, I selected **K = 3** for the number of segmentations.
-
+<div style="clear: both;"></div>
 ________________________________________
 
 ### 4.2. Customer Segmentation Visualization (PCA)
-
-<img src="images/Churn_Project/Picture9.png?raw=true"/>
+<div style="text-align: center;">
+  <img src="images/Churn_Project/Picture9.png?raw=true" alt="Customer Tenure, Charges" />
+</div>
 
 To uncover patterns in customer behavior, I performed K-means clustering using a variety of customer attributes such as contract type, tenure, monthly charges, and usage patterns. The objective was to group customers with similar characteristics into distinct, actionable segments.
 
@@ -223,8 +233,10 @@ In the next step, I analyzed these clusters in detail to understand their defini
 ________________________________________
 
 ### 4.3. Customer Segments & Personas
-<img src="images/Churn_Project/Picture10.png?raw=true"/>
 
+<div style="float: left; margin: 0 20px 20px 0; width: 300px;">
+  <img src="images/Churn_Project/Picture10.png?raw=true" alt="Churn Status" style="width: 100%;" />
+</div>
 A summary of customer behavioral & demographic insights used to better understand each segment:
 
 **Cluster 1 (High) – 85% likelihood of churn**  
@@ -240,7 +252,7 @@ A summary of customer behavioral & demographic insights used to better understan
 **Cluster 3 (Moderate) – 13% likelihood of churn**  
 - Highest revenue customers  
 - Long tenure, high overall service use
-
+<div style="clear: both;"></div>
 ________________________________________
 
 Equipped with customer personas and churn probabilities, I next focused on designing a data-driven retention strategy. The following analysis compares two approaches to deciding which customers should be targeted under realistic budget constraints.
@@ -330,10 +342,14 @@ ________________________________________
 ### 5.3. Comparative Results
 
 **Retention Funnel:**
-<img src="images/Churn_Project/Picture11.png?raw=true"/>
+<div style="float: right; margin: 0 20px 20px 0; width: 300px;">
+  <img src="images/Churn_Project/Picture11.png?raw=true" alt="Churn Status" style="width: 100%;" />
+</div>
+
 
 - Starting with 7,032 total customers, the churn model first identifies 2,620 customers as likely churners based on predicted probabilities and expected benefits (heuristic approach).
 - Applying the final Knapsack (Scenario 2), only 593 customers are selected as the optimal retention targets from 2 segments. These are the customers who provide a balance of high net expected profit and maintain market share, while staying within budget.
+<div style="clear: both;"></div>
 
 This highlights the importance of not only predicting churn but also strategically selecting which customers to retain given limited resources. The next section summarizes the key insights and actionable recommendations derived from this analysis.
 
