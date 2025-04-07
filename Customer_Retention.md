@@ -382,7 +382,7 @@ ________________________________________
 
 **Retention Funnel:**
 
-<div style="float: right; margin: 0 20px 20px 0; width: 400px;">
+<div style="float: right; margin: 0 20px 20px 0; width: 500px;">
   <img src="images/Churn_Project/Picture11.png?raw=true" alt="Retention Funnel" style="width: 100%; max-width: 100%;" />
 </div>
 
