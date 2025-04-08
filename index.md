@@ -9,7 +9,8 @@ title: Joshua Thompson
     <td style="vertical-align: top; padding-right: 20px; width: 50%;">
       <h2>Education</h2>
       <p><strong>Master of Science, Business Analytics</strong><br>
-      <em>California State Polytechnic University, Pomona</em><br>
+      <em>California State Polytechnic University, Pomona</em></p>
+
 
       <p><strong>Bachelor of Science, Industrial & Manufacturing Engineering</strong><br>
       <em>California State Polytechnic University, Pomona</em></p>
