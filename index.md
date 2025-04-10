@@ -51,7 +51,7 @@ title: Joshua Thompson
 
 ---
 
-[Project 2 Title](/pdf/sample_presentation.pdf)  
+[Coming Soon! - Dynamic Pricing Optimization: A Machine Learning and Revenue Maximization Framework](/pdf/sample_presentation.pdf)  
 <img src="images/dummy_thumbnail.jpg?raw=true" style="max-width: 100%;"/>
 
 ---
