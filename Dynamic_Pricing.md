@@ -1,6 +1,6 @@
 ---
 layout: no_sidebar
-title: Churn Project
+title: Dynamic Pricing
 ---
 
 <div style="text-align: right; margin-top: 10px;">
