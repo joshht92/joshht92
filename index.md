@@ -51,7 +51,7 @@ title: Joshua Thompson
 
 ---
 
-[Coming Soon! - Dynamic Pricing- Optimizing Rideshare Pricing through Behavioral Modeling and Surge Strategy](/pdf/sample_presentation.pdf)  
+[Coming Soon! - Dynamic Pricing- Optimizing Rideshare Pricing through Behavioral Modeling and Surge Strategy](/Dynamic_Pricing.md)  
 <img src="images/Dynamic_pricing.png?raw=true" style="max-width: 80%;"/>
 
 ---
