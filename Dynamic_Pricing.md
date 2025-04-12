@@ -15,7 +15,7 @@ title: Churn Project
     Behavioral Modeling, Machine Learning, and Revenue Optimization
   </p>
   <p><strong>Joshua Thompson</strong><br>
-  Date: 03/28/2025</p>
+  Date: In progress</p>
 </div>
 
 <hr style="margin: 40px 0;">
