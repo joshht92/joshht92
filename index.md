@@ -51,7 +51,7 @@ title: Joshua Thompson
 
 ---
 
-[Coming Soon! - Dynamic Pricing Optimization: A Machine Learning and Revenue Maximization Framework](/pdf/sample_presentation.pdf)  
+[Coming Soon! - Dynamic Pricing Optimization Framework: Optimizing Ride Pricing through Behavioral Modeling and Surge Strategy](/pdf/sample_presentation.pdf)  
 <img src="images/dummy_thumbnail.jpg?raw=true" style="max-width: 100%;"/>
 
 ---
